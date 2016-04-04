@@ -99,13 +99,20 @@ The IP was show on the container instance now it is 134.168.27.43 and Port Expos
 
 ##Step 5 Code Change
 Before the code change the DevOps as below
-![alt tag]()
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14251192/67dbecb6-fab4-11e5-93c9-b5e5062a1615.png)
 
 Now change the code for index.html and commit to github then the DevOps will detected the code change and build by itself as below
-![alt tag]()
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14251185/64ae92c8-fab4-11e5-9595-abac490b6182.png)
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14251187/64b158be-fab4-11e5-807c-647b59356b9f.png)
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14251186/64aee002-fab4-11e5-9429-8af3200ce1e0.png)
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14251183/64ab23cc-fab4-11e5-831a-428f9a044f86.png)
+
 
 after a while the deployment step will also execute and a new instance will deploy to BlueMix w/o setting any thing.
-![alt tag]()
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14251184/64abaa40-fab4-11e5-9bfa-b559c4405538.png)
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14251182/64aac2c4-fab4-11e5-9582-ca350a7c5b67.png)
+
+
 
 
 
