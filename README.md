@@ -77,4 +77,35 @@ As the result the Build Stage became
 
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249877/751afc74-faae-11e5-93a6-d88e3d147a01.png)
 
+####Step 3.2.2 Create the other stage of DEV Deployment
+
+The input select Input Type Build Artifacts and Stage select the previous stage
+
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14250465/1f9a36ea-fab1-11e5-9479-5e5adb34cabf.png)
+
+The JOBS select Deploy, The DeployerType select IBM Containers on Bluemix, the Name create a new name for container, the PORT select 8080 it should be same as Dockerfile EXPOSE 8080 above.
+
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14250466/1f9d6572-fab1-11e5-8965-54737dffcd2d.png)
+
+Then the stage will show now become It may not has the IP bind. The IP should be bind on DASHBOARD. Please select the IP for the container.
+
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14250462/1f582142-fab1-11e5-80c1-e20517ae4739.png)
+
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14250455/18709f4e-fab1-11e5-8f6f-219593906eb6.png)
+
+
+##Step 4 Test the result
+The IP was show on the container instance now it is 134.168.27.43 and Port Expose as 8080, the service was define on the Dockerfile and the servlet. it is WebService. We can check the output on the browser
+
+##Step 5 Code Change
+Before the code change the DevOps as below
+![alt tag]()
+
+Now change the code for index.html and commit to github then the DevOps will detected the code change and build by itself as below
+![alt tag]()
+
+after a while the deployment step will also execute and a new instance will deploy to BlueMix w/o setting any thing.
+![alt tag]()
+
+
 
