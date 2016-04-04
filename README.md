@@ -55,9 +55,26 @@ cp $TEMP_PWD/DockerWebServer/docker/* $TEMP_PWD
 cd $TEMP_PWD
 ls -al
 ```
+The script above help to copy the war file and Docker file from workspace into root level. The IBM Container build can only lookup the Dockerfile and their resource in roor level. so that the TEMO_PWD is the roor level and everything need to put on the root.
+and Dockerfile show above will help to collect the war file into webapp folder inside the image. The IBM container builder will build the image and assign the new tag number for it as below:
+```
+registry.ng.bluemix.net/davidchow/dockerwebtest   1.0                 5391651c8f44        6 days ago          465 MB
+registry.ng.bluemix.net/davidchow/myapp           24                  6562dacc14cd        2 hours ago         357.4 MB
+registry.ng.bluemix.net/davidchow/myapp           25                  543e3e2d03fc        2 hours ago         357.4 MB
+registry.ng.bluemix.net/davidchow/myapp           26                  1c727674e720        About an hour ago   357.4 MB
+registry.ng.bluemix.net/davidchow/myapp           27                  1f71bfd284b1        About an hour ago   357.4 MB
+registry.ng.bluemix.net/ibm-mobilefirst-starter   latest              a100524c96cb        13 days ago         921.6 MB
+registry.ng.bluemix.net/ibm-node-strong-pm        latest              3e2373877cf5        10 days ago         572 MB
+registry.ng.bluemix.net/ibmliberty                latest              33fdda9431c7        2 weeks ago         555.3 MB
+registry.ng.bluemix.net/ibmnode                   latest              a4964fd52b4f        11 days ago         434.7 MB
+registry.ng.bluemix.net/ibmnode                   v4                  a4964fd52b4f        11 days ago         434.7 MB
+registry.ng.bluemix.net/ibmnode                   v1.1                e4812bb29c8e        11 days ago         410.1 MB
+registry.ng.bluemix.net/ibmnode                   v1.2                5f50977d9959        11 days ago         426.2 MB
+```
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249873/71448bd8-faae-11e5-8d32-0c980d865b43.png)
 
 As the result the Build Stage became
+
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249877/751afc74-faae-11e5-93a6-d88e3d147a01.png)
 
 
