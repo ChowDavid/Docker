@@ -16,5 +16,12 @@ COPY *.war /usr/local/tomcat/webapps
 Go to web page for [BlueMux DevOps](https://hub.jazz.net/) Setting
 Create an account if not.
 
-###Step3.1 Clck Created Project
+###Step3.1 Create Project for DevOps
+Click Create Project
+![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249094/9a777082-faaa-11e5-918d-1896e60c469b.png)
+Name as Docker2
+Select the Link to an existing Github repository
+Select Link to a repo on GitHub
+Select the link from GitHub. You may need to link the github account on first time use.
+Once the account create you can click the project and it a repo show
 
