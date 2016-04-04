@@ -29,14 +29,19 @@ Once the account create you can click the project and it a repo show
 Now the GitHub was binded to bluemix. Once the github code changed The hub.jazz also know.
 ###Step 3.2 Click on the Top Right button BUILD & DEPLOY
 ####Step 3.2.1 Create Build State
+
 Click the Add Stage. 
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249849/559b67da-faae-11e5-8971-c92335491426.png)
+
 Then Select the input type as SCM Repository
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249870/659de4d2-faae-11e5-88f8-81476d0177ec.png)
+
 Click the Jobs tab to Add Job. Test and Tester Type as Simple. On the Test Command as below
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249872/6b09fbe0-faae-11e5-91cb-c431b6817037.png)
+
 Then create Build Job, Builder Type is Maven 
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249939/c1388068-faae-11e5-89f7-bbadd7ad888c.png)
+
 Then create Build Job again. This time create Docker Image, Builder type select IBM container service, image name as myapp. It has a default build script. Please add the following scipt below the first time as below
 ```
 # check the previous target
@@ -51,6 +56,7 @@ cd $TEMP_PWD
 ls -al
 ```
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249873/71448bd8-faae-11e5-8d32-0c980d865b43.png)
+
 As the result the Build Stage became
 ![alt tag](https://cloud.githubusercontent.com/assets/4963861/14249877/751afc74-faae-11e5-93a6-d88e3d147a01.png)
 
