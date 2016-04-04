@@ -1,13 +1,20 @@
-#Docker Demo
-This demo to use microservice to deploy the Java web application into a Tomcat container. and also create the container for MYSQL.
-Then after both container would start up one by one by docker run command. The next test will try to start the docker by docker-compose run.
-This demo does not include any DevOps automation. It would demo on the other chapter.
+#BlueMix, Docker Container, DevOps Service Demo
+This demo to show how to develope a native Java application and build by maven and deply to Bluemix by  Bluxmix DevOps service. There are some setting on Bluemix DevOps Service.
+This project has the following module
+- WebService maven module - Which is only a Java Dynamic Applcation.
+- DockerWebServer module - which only help to store the Dockerfile and nothing more.
+- Docker module - that is a main module include both two modules.
 
-#Step 1 Create an web service source can run on tomcat
+##Step 1 commit your Java dynamic web project into GitHub
+##Step 2 commit the Dockerfile to DockerWebServer module under docker folder
+```docker
+FROM tomcat:8.0
+EXPOSE 8080
+COPY *.war /usr/local/tomcat/webapps
+```
+##Step3 Setup the IBM Bluemix DevOps Servies 
+Go to web page for [BlueMux DevOps](https://hub.jazz.net/) Setting
+Create an account if not.
 
+###Step3.1 Clck Created Project
 
-#Step 2 Build the Web Service and build the DockerWebServer image
-
-#Step 3 Build the Docker MYSQL server images
-
-#Step 4 bind both docker
